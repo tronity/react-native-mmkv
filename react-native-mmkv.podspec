@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
     'ios/**/*.h'
   ]
 
-  s.dependency "MMKV", ">= 1.3.3"
+  s.dependency "MMKV", ">= 1.3.2"
   if respond_to?(:install_modules_dependencies, true)
     install_modules_dependencies(s)
   else

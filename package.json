@@ -34,13 +34,13 @@
     "lint-ci": "yarn lint -f ./node_modules/@firmnav/eslint-github-actions-formatter/dist/formatter.js",
     "lint-cpp": "scripts/clang-format.sh",
     "test": "jest",
-    "prepare": "git submodule update --init --recursive && bob build",
+    "prepare": "bob build",
     "prepack": "bob build",
     "update-submodule": "git submodule update --remote --merge",
     "release": "release-it",
     "example": "yarn --cwd example",
     "pods": "cd example && yarn pods",
-    "bootstrap": "git submodule update --init --recursive && yarn && cd example && yarn bootstrap"
+    "bootstrap": "yarn && cd example && yarn bootstrap"
   },
   "keywords": [
     "react-native",
